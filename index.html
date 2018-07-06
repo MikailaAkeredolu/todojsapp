@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<h1>Todo List</h1>
+
+    <!--buttons with NO paramerized methods-->
+    <div>
+        <button onclick="handlers.displayTodos()">Display Todos</button>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <br>
+
+    <!--buttons with paramerized methods-->
+    <div>
+        <input id="addTodoTextInput" type="text">
+        <button onclick="handlers.addTodos()">Add</button>
+    </div>
+
+    <br>
+
+    <!--change todo-->
+    <div id="listItem">
+        <button onclick="handlers.changeTodos()">Change ToDo</button>
+
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput" type="text">
+    </div>
+
+    <br>
+
+    <!-- deleteTodos -->
+    <div>
+    <button onclick="handlers.deleteTodos()">Delete Todos</button>
+    <input id="deleteTodoPositionInput" type="number">
+ 
+    </div>
+
+    <br>
+        <!-- toggleCompleted -->
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+        <input id="toggleCompletedInput" type="number">
+    </div>
+
+    <!-- display list items -->
+   <ul onload="showView.displayTodosView()"></ul>
+
+
+
+
+
+
+
+    <!--put script tags here cos you want DOM to load first-->
+<script src="script.js"></script>
+</body>
+</html>
