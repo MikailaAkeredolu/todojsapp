@@ -8,14 +8,6 @@
 
 <h1>Todo List</h1>
 
-    <!--buttons with NO paramerized methods-->
-    <div>
-        <button onclick="handlers.displayTodos()">Display Todos</button>
-        <button onclick="handlers.toggleAll()">Toggle All</button>
-    </div>
-
-    <br>
-
     <!--buttons with paramerized methods-->
     <div>
         <input id="addTodoTextInput" type="text">
@@ -35,11 +27,10 @@
     <br>
 
     <!-- deleteTodos -->
-    <div>
+    <!-- <div>
     <button onclick="handlers.deleteTodos()">Delete Todos</button>
     <input id="deleteTodoPositionInput" type="number">
- 
-    </div>
+    </div> -->
 
     <br>
         <!-- toggleCompleted -->
@@ -48,9 +39,18 @@
         <input id="toggleCompletedInput" type="number">
     </div>
 
-    <!-- display list items -->
-   <ul onload="showView.displayTodosView()"></ul>
+    <br>
+     <!--buttons with NO paramerized methods-->
+     <div>
+            <!-- <button onclick="handlers.displayTodos()">Display Todos</button> -->
+            <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
 
+
+
+    <!-- display list items -->
+   <ul></ul>
+    
 
 
 
